@@ -1,0 +1,222 @@
+.card {
+    width: 100%;
+    max-width: 400px;
+    border: 0.4em solid #ccc;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: transform 100ms ease;
+    &:hover{
+        transform: scale(1.04);
+    }
+}
+.card__header {
+    background-color: aquamarine;
+    width: 100%;
+    aspect-ratio: 2;
+    position: relative;
+    border-radius: 0.4em;
+}
+.card__img {
+    position: absolute;
+    width: 50%;
+    top: 2em;
+    left: 50%;
+    transform:translateX(-50%)
+}
+.card__principal {
+    margin-top: 2.2em;
+}
+.card__name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+.card__types {
+    --gap-types: 0.7em;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-types);
+}
+.card__type:not(:nth-child(1)::before){
+    content: '/';
+    padding-right: var(--gap-types);
+}
+.card__hr {
+    --margin-y: 0.8em;
+    margin-top: var(--margin-y);
+    margin-bottom: var(--margin-y);
+    border-top: 1px solid #ccc5;
+    margin-inline: 2em;
+}
+.card__stats {
+    padding: 1em 1em 2em;
+}
+.card__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.5em;
+}
+.card__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    align-items: center;
+}
+.card__stat__label{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+.card__stat__value{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+/*Background Headers*/
+.bg-electric{
+    background-color:  rgb(40, 45, 148);
+}
+.bg-water{
+    background-color:  rgb(51, 108, 219);
+}
+.bg-fire{
+    background-color:  rgb(214, 100, 61);
+}
+.bg-grass{
+    background-color:  rgb(186, 219, 190);
+}
+.bg-bug{
+    background-color:  rgb(107, 181, 89);
+}
+.bg-normal{
+    background-color:  rgb(129, 91, 99);
+}
+.bg-fighting{
+    background-color:  rgb(153, 76, 52);
+}
+.bg-poison{
+    background-color:  rgb(135, 88, 192);
+}
+.bg-ghost{
+    background-color:  rgb(69, 73, 159);
+}
+.bg-rock{
+    background-color:  rgb(135, 136, 140);
+}
+.bg-dark{
+    background-color:  rgb(9, 12, 11);
+}
+.bg-ice{
+    background-color:  rgb(139, 207, 243);
+}
+.bg-steel{
+    background-color:  rgb(114, 131, 125);
+}
+.bg-flying{
+    background-color:  rgb(112, 165, 175);
+}
+.bg-fairy{
+    background-color:  rgb(181, 72, 107);
+}
+.bg-ground{
+    background-color:  rgb(144, 105, 46);
+}
+/*text color*/
+.color-electric{
+    color: rgb(40, 45, 148);
+}
+.color-water{
+    color: rgb(51, 108, 219);
+}
+.color-fire{
+    color: rgb(214, 100, 61);
+}
+.color-grass{
+    color: rgb(186, 219, 190);
+}
+.color-bug{
+    color: rgb(107, 181, 89);
+}
+.color-normal{
+    color: rgb(129, 91, 99);
+}
+.color-fighting{
+    color: rgb(153, 76, 52);
+}
+.color-poison{
+    color: rgb(135, 88, 192);
+}
+.color-ghost{
+    color: rgb(69, 73, 159);
+}
+.color-rock{
+    color: rgb(135, 136, 140);
+}
+.color-dark{
+    color: rgb(9, 12, 11);
+}
+.color-ice{
+    color: rgb(139, 207, 243);
+}
+.color-steel{
+    color: rgb(114, 131, 125);
+}
+.color-flying{
+    color: rgb(112, 165, 175);
+}
+.color-fairy{
+    color: rgb(181, 72, 107);
+}
+.color-ground{
+    color: rgb(144, 105, 46);
+}
+
+/*Border color*/
+.border__electric{
+    border-color:  rgb(84, 91, 233);
+}
+.border__water{
+    border-color: rgb(109, 154, 242);
+}
+.border__fire{
+    border-color: rgb(246, 99, 51);
+}
+.border__grass{
+    border-color: rgb(74, 178, 86);
+}
+.border__bug{
+    border-color: rgba(110, 224, 16, 0.87);
+}
+.border__normal{
+    border-color: rgb(212, 137, 153);
+}
+.border__fighting{
+    border-color: rgb(198, 107, 80);
+}
+.border__poison{
+    border-color: rgb(180, 141, 227);
+}
+.border__ghost{
+    border-color: rgb(34, 44, 235);
+}
+.border__rock{
+    border-color: rgb(205, 207, 217);
+}
+.border__dark{
+    border-color: rgb(109, 113, 112);
+}
+.border__ice{
+    border-color: rgb(63, 180, 243);
+}
+.border__steel{
+    border-color: rgb(58, 69, 65);
+}
+.border__flying{
+    border-color: rgb(63, 100, 107);
+}
+.border__fairy{
+    border-color: rgb(238, 101, 144);
+}
+.border__ground{
+    border-color: rgb(87, 62, 23);
+}
