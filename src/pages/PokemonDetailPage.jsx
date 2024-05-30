@@ -21,7 +21,7 @@ const PokemonDetailPage = () => {
   return (
     <>
     <header className='header_page_pokemon_detail' onClick={handleHomepage}>
-      <img className='image_header_pokemon_detail' src="../public/pokedexPageheader.png" alt="" />
+      <img className='image_header_pokemon_detail' src="../pokedexPageheader.png" alt="" />
     </header>
     <div className='card_container_pokemon_detail'>
       <header className={`info__card__header bg-${pokemon?.types[0].type.name}`}>
@@ -79,7 +79,7 @@ const PokemonDetailPage = () => {
   <div className='card__stats__container'>
     <h3 className='card__stats'>Movements</h3>
     <hr className='card__stats__hr' />
-    <img className='card__stats__pokebolita' src="../public/pokebolita.png" alt="" />
+    <img className='card__stats__pokebolita' src="../pokebolita.png" alt="" />
   </div>
   <ul className='info__move__ul'>
     {

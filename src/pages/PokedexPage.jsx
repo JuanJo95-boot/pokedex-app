@@ -47,7 +47,7 @@ const handleHomepage = () => {
   return (
     <>
     <header className='pokedex__page__header' onClick={handleHomepage}>
-      <img className='img__pokedex__page__header' src="../public/pokedexPageheader.png" alt="" />
+      <img className='img__pokedex__page__header' src="../pokedexPageheader.png" alt="" />
     </header>
     <div className='pokedex__page__container'>
       <p className='pokedex__page__p'><span className='welcome__pokedex__page'>Welcome</span> <span className='trainer__pokedex__page'>{trainer}</span>, here you can find your favorite pokemon</p>
